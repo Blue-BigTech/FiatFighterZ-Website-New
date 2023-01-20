@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FiatFighterz</title>
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/plugins/video-player.css" /> -->
+    <!-- owl carousel link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/assets/owl.carousel.min.css"
+    />
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body class="proposal">
+    <!-- header start -->
+    <header class="bg-theme-primary py-2">
+      <div class="container">
+        <ul class="nav top-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-discord"></i>
+              <span class="ml-2">Discord</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-twitter"></i>
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fab fa-medium"></i>
+              <span class="ml-2">Medium</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- token claim content section start -->
+    <section class="proposal-content bg-theme-dark pos-relative">
+      <div class="shape-blue"></div>
+      <div class="shape-pink"></div>
+      <div class="shape-light-blue"></div>
+      <div class="shape-purple"></div>
+      <div class="shape-orange"></div>
+
+      <!-- nav start -->
+      <nav class="navbar navbar-expand-lg header-nav">
+        <div class="container nav-container">
+          <a class="navbar-brand logo" href="#">
+            <img src="images/logo.png" alt="logo" class="img-fluid" />
+          </a>
+          <div
+            id="hamburger"
+            class="d-lg-none navbar-toggler order-0 order-md-1"
+            data-toggle="collapse"
+            data-target="#top-nav"
+            aria-controls="top-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="display_menu()"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="collapse navbar-collapse custom-navbar" id="top-nav">
+            <ul class="navbar-nav ml-auto d-flex align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Claim</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-play-game"
+                  href="play-game.html"
+                  >Play Game
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav end -->
+      <!-- proposal-content start -->
+      <div class="proposal-content-inner pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card proposal-card">
+                <div class="card-top text-align-center text-center">
+                  <div class="card-logo mx-auto mb-4">
+                    <img src="images/logo.png" alt="logo" class="img-fluid" />
+                  </div>
+                  <h2 class="card-title heading-5">FiatFighterz</h2>
+                  <p class="sec-text">870 members</p>
+                  <button class="btn btn-theme-primary">Join</button>
+                </div>
+                <div class="card-bottom text-align-center text-center">
+                  <div class="list-group">
+                    <a
+                      href="#"
+                      class="list-group-item list-group-item-action active"
+                      aria-current="true"
+                    >
+                      Proposals
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action"
+                      >New Proposal</a
+                    >
+                    <a href="#" class="list-group-item list-group-item-action"
+                      >About</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col end  -->
+            <div class="col-md-8 text-white mt-5 mt-md-0">
+              <div
+                class="header d-flex align-items-center justify-content-between pb-3"
+              >
+                <h3 class="heading-5 mb-0 text-theme-primary">Proposals</h3>
+                <div class="dropdown proposal-dropdown">
+                  <button
+                    class="btn btn-theme-primary-outline text-theme-primary dropdown-toggle"
+                    type="button"
+                    id="proposal-select"
+                    data-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    All
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="proposal-select">
+                    <a class="dropdown-item" href="#">All</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </div>
+              </div>
+              <!-- header end -->
+              <div class="proposal-list pb-5">
+                <div class="card proposal-list-item mt-4">
+                  <div class="card-body d-flex flex-wrap">
+                    <div
+                      class="card-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="card-top-left d-flex align-items-center">
+                        <div class="card-top-avatar mr-2">
+                          <img src="images/logo.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-top-name">
+                          FiatFighterz by 0x9ffa...DfaB
+                        </div>
+                        <button class="btn tag tag-outline ml-3 mr-2">
+                          core
+                        </button>
+                      </div>
+                      <div class="card-top-right">
+                        <button class="btn tag tag-optional">Close</button>
+                      </div>
+                    </div>
+                    <!-- card top end  -->
+                    <div class="card-text">
+                      <p class="font-weight-bold mt-4 sec-text">
+                        What Should be the price to aquire a private realm on
+                        the game
+                      </p>
+                      <!-- card content end  -->
+                      <p class="sec-text">
+                        Privatly owned maps/realms are coming and we'd like to
+                        ask your thoughts on the scheme on which they should be
+                        distributed!
+                      </p>
+                    </div>
+                    <!-- card text end -->
+                    <div class="card-bottom align-self-end">
+                      <span class="text-theme-primary"
+                        ><i class="far fa-check-circle"></i
+                      ></span>
+                      <span class="text-theme-primary"> 10 $BANANA </span>
+                      <span class="text-theme-primary">- 7.6K OOH</span>
+                    </div>
+                    <!-- card footer end -->
+                  </div>
+                </div>
+                <!-- list item end  -->
+                <div class="card proposal-list-item mt-4">
+                  <div class="card-body d-flex flex-wrap">
+                    <div
+                      class="card-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="card-top-left d-flex align-items-center">
+                        <div class="card-top-avatar mr-2">
+                          <img src="images/logo.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-top-name">
+                          FiatFighterz by 0x9ffa...DfaB
+                        </div>
+                        <button class="btn tag tag-outline ml-3 mr-2">
+                          core
+                        </button>
+                      </div>
+                      <div class="card-top-right">
+                        <button class="btn tag tag-optional">Close</button>
+                      </div>
+                    </div>
+                    <!-- card top end  -->
+                    <div class="card-text">
+                      <p class="font-weight-bold mt-4 sec-text">
+                        What Should be the price to aquire a private realm on
+                        the game
+                      </p>
+                      <!-- card content end  -->
+                      <p class="sec-text">
+                        Privatly owned maps/realms are coming and we'd like to
+                        ask your thoughts on the scheme on which they should be
+                        distributed!
+                      </p>
+                    </div>
+                    <!-- card text end -->
+                    <div class="card-bottom align-self-end">
+                      <span class="text-theme-primary"
+                        ><i class="far fa-check-circle"></i
+                      ></span>
+                      <span class="text-theme-primary"> 10 $BANANA </span>
+                      <span class="text-theme-primary">- 7.6K OOH</span>
+                    </div>
+                    <!-- card footer end -->
+                  </div>
+                </div>
+                <!-- list item end  -->
+                <div class="card proposal-list-item mt-4">
+                  <div class="card-body d-flex flex-wrap">
+                    <div
+                      class="card-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="card-top-left d-flex align-items-center">
+                        <div class="card-top-avatar mr-2">
+                          <img src="images/logo.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-top-name">
+                          FiatFighterz by 0x9ffa...DfaB
+                        </div>
+                        <button class="btn tag tag-outline ml-3 mr-2">
+                          core
+                        </button>
+                      </div>
+                      <div class="card-top-right">
+                        <button class="btn tag tag-optional">Close</button>
+                      </div>
+                    </div>
+                    <!-- card top end  -->
+                    <div class="card-text">
+                      <p class="font-weight-bold mt-4 sec-text">
+                        What Should be the price to aquire a private realm on
+                        the game
+                      </p>
+                      <!-- card content end  -->
+                      <p class="sec-text">
+                        Privatly owned maps/realms are coming and we'd like to
+                        ask your thoughts on the scheme on which they should be
+                        distributed!
+                      </p>
+                    </div>
+                    <!-- card text end -->
+                    <div class="card-bottom align-self-end">
+                      <span class="text-theme-primary"
+                        ><i class="far fa-check-circle"></i
+                      ></span>
+                      <span class="text-theme-primary"> 10 $BANANA </span>
+                      <span class="text-theme-primary">- 7.6K OOH</span>
+                    </div>
+                    <!-- card footer end -->
+                  </div>
+                </div>
+                <!-- list item end  -->
+                <div class="card proposal-list-item mt-4">
+                  <div class="card-body d-flex flex-wrap">
+                    <div
+                      class="card-top d-flex align-items-center justify-content-between"
+                    >
+                      <div class="card-top-left d-flex align-items-center">
+                        <div class="card-top-avatar mr-2">
+                          <img src="images/logo.png" alt="" class="img-fluid" />
+                        </div>
+                        <div class="card-top-name">
+                          FiatFighterz by 0x9ffa...DfaB
+                        </div>
+                        <button class="btn tag tag-outline ml-3 mr-2">
+                          core
+                        </button>
+                      </div>
+                      <div class="card-top-right">
+                        <button class="btn tag tag-optional">Close</button>
+                      </div>
+                    </div>
+                    <!-- card top end  -->
+                    <div class="card-text">
+                      <p class="font-weight-bold mt-4 sec-text">
+                        What Should be the price to aquire a private realm on
+                        the game
+                      </p>
+                      <!-- card content end  -->
+                      <p class="sec-text">
+                        Privatly owned maps/realms are coming and we'd like to
+                        ask your thoughts on the scheme on which they should be
+                        distributed!
+                      </p>
+                    </div>
+                    <!-- card text end -->
+                    <div class="card-bottom align-self-end">
+                      <span class="text-theme-primary"
+                        ><i class="far fa-check-circle"></i
+                      ></span>
+                      <span class="text-theme-primary"> 10 $BANANA </span>
+                      <span class="text-theme-primary">- 7.6K OOH</span>
+                    </div>
+                    <!-- card footer end -->
+                  </div>
+                </div>
+                <!-- list item end  -->
+              </div>
+            </div>
+            <!-- col end  -->
+          </div>
+        </div>
+      </div>
+      <!-- proposal-content end -->
+    </section>
+    <!-- token claim content section end -->
+
+    <!-- footer start -->
+    <footer class="footer pt-4 pb-5 text-white text-center">
+      <div class="container">
+        <div class="logo mx-auto pt-3">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </div>
+        <ul class="nav footer-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Terms & Conditions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Lore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">NFT Contract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Token Contract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Audit</a>
+          </li>
+        </ul>
+        <!-- footer nav end -->
+        <ul class="nav social-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab fa-discord"></i>
+              <span class="ml-2">Discord</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab fa-twitter"></i>
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab fa-medium"></i>
+              <span class="ml-2">Medium</span>
+            </a>
+          </li>
+        </ul>
+        <!-- footer social nav  -->
+        <p class="text-capitalize pt-1">All rights Reserved 2021</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel js -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/owl.carousel.min.js"></script>
+    <script src="js/plugins/video-player.js"></script>
+    <script>
+      // custom hamburger toggle
+      function display_menu() {
+        var nav_container = document.querySelector(".nav-container");
+        !nav_container.classList.contains("display_menu")
+          ? nav_container.classList.add("display_menu")
+          : nav_container.classList.remove("display_menu");
+      }
+    </script>
+  </body>
+</html>

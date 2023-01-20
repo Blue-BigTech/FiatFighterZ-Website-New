@@ -1,0 +1,199 @@
+@font-face {
+  font-family: dogica;
+  src: url("../fonts/dogica.ttf");
+}
+@font-face {
+  font-family: dogica;
+  src: url("../fonts/dogicabold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: publicPixel;
+  src: url("../fonts/PublicPixel.ttf");
+}
+@font-face {
+  font-family: upheavtt;
+  src: url("../fonts/upheavtt.ttf");
+}
+
+body {
+  font-family: dogica;
+  font-size: 16px;
+}
+
+.logo {
+  width: 135px;
+}
+.pos-relative {
+  position: relative;
+}
+.top-nav {
+  .nav-link {
+    color: #000;
+    letter-spacing: -0.2em;
+    &:hover{
+      color: rgba($color: #000000, $alpha: .8);
+    }
+    i{
+      font-size: 18px;
+    }
+    font-size: 16px;
+  }
+}
+
+
+@import "variables";
+@import "utilities";
+@import "video-player";
+@import "shapes";
+@import "navbar";
+@import "footer";
+
+// pages
+@import "pages/home";
+@import "pages/token-claim";
+@import "pages/proposal";
+
+.hero-sec {
+  position: relative;
+  z-index: 99;
+}
+.nft-sec {
+  padding-top: 200px;
+  overflow: hidden
+}
+
+.nft-calculator {
+  margin-bottom: 20px;
+}
+.nft-calculator {
+  color: #FAB401;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 90px;
+  opacity: 1;
+}
+.nft-heading-desc {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  display: block;
+  margin-bottom: 20px;
+  a {
+    color: #fff;
+
+  }
+}
+
+.d-block .nft-heading-desc {
+    margin-bottom: 20px
+};
+
+.card-image img {
+  max-width: 100%;
+}
+
+// responsive css
+@media (min-width: 1500px) {
+  body {
+    font-size: 18px;
+  }
+  .top-nav {
+    .nav-link {
+      font-size: 18px;
+    }
+  }
+  .container{
+    width: 1440px;
+    min-width: 1440px;
+  }
+}
+
+@media (max-width: 1199.98px){
+  body {
+    font-size: 14px;
+  }
+  .top-nav {
+    .nav-link {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .top-nav {
+    .nav-link {
+      span {
+        margin-left: 0.2rem !important;
+      }
+    }
+  }
+}
+
+
+.slick-carousel {
+  width: auto;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.img-item {
+  img {
+    max-width: 120px;
+  }
+}
+
+.gap {
+  height: 30px;
+  clear: both;
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 425px) {
+  .img-item {
+    img {
+      max-width: 145px;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  .img-item {
+    img {
+      max-width: 200px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .img-item {
+    img {
+      max-width: 165px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .img-item {
+    img {
+      max-width: 200px;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .img-item {
+    img {
+      max-width: 260px;
+    }
+  }
+}

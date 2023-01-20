@@ -1,0 +1,269 @@
+.text-theme-primary {
+  color: $primaryTextColor;
+}
+.text-theme-grey {
+  color: $textGrey;
+}
+.bg-theme-primary {
+  background-color: $primaryColor;
+}
+.bg-theme-primary-dark {
+  background-color: $primaryDarkColor;
+}
+.bg-theme-secondary {
+  background-color: $secondaryColor;
+}
+
+.bg-theme-dark {
+  background-color: $darkColor;
+}
+
+.btn-theme {
+  &-primary {
+    background-color: $primaryColor;
+    color: #fff;
+    border-radius: 0 !important;
+    padding: 12px 24px;
+    font-size: 18px;
+    &:hover {
+      background-color: #fff;
+      color: $primaryTextColor !important;
+    }
+  }
+  &-primary-outline {
+    background: transparent;
+    border-radius: 0 !important;
+    border: 1px solid $primaryColor;
+    padding: 12px 24px;
+    transition: all ease 0.3s;
+    font-size: 18px;
+    &:hover {
+      background: $primaryColor;
+    }
+  }
+}
+.btn-play-game{
+  width: 154px;
+  height: 55px;
+  border: 2px solid $primaryColor;
+  font-size: 1rem;
+  letter-spacing: -2.5px;
+  color: #fff;
+  transition: all ease .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  margin-left: 120px;
+  &:hover{
+    background-color: $primaryColor;
+    color: #fff;
+  }
+}
+.btn-learn-more{
+  width: 212px;
+  height: 63px;
+  color: #fff;
+  transition: all ease .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  letter-spacing: -3px;
+  font-size: 18px;
+  border: 1px solid $primaryColor;
+  margin-left: auto;
+  margin-right: auto;
+  &:hover{
+    background-color: $primaryColor;
+    color: #fff;
+  }
+}
+
+.cus-check {
+  i {
+    color: #150633;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+.heading-1 {
+  font-size: 65px;
+  font-weight: 900;
+  line-height: 1.12025;
+}
+.heading-2 {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1.12025;
+}
+.heading-3 {
+  font-size: 40px;
+}
+.heading-4 {
+  font-size: 30px;
+}
+.heading-5 {
+  font-size: 20px;
+  font-weight: 700px;
+  line-height: 1.12025;
+}
+.heading-6 {
+  font-size: 16px;
+  font-weight: 700px;
+  line-height: 1.5;
+}
+.heading-1-upheaval {
+  font-size: 65px;
+  line-height: .9285;
+}
+.heading-3-upheaval {
+  font-size: 40px;
+}
+.heading-4-upheaval {
+  font-size: 30px;
+}
+.sec-title,
+.title {
+  font-family: upheavtt;
+}
+
+// padding margin
+.py-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.py-70 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.border-white-2 {
+  border: 2px solid #fff;
+}
+.lh-2 {
+  line-height: 2;
+}
+.tag {
+  font-size: 0.65rem;
+  border-radius: 20px;
+}
+.tag-outline {
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+}
+.tag-optional {
+  background: $optionalColor;
+  color: #fff;
+}
+
+// font family
+.text-dogica{
+  font-family: dogica;
+}
+.text-publicPixel{
+  font-family: publicPixel;
+}
+.text-upheavtt{
+  font-family: upheavtt;
+}
+
+// letter spacing
+.lt-minus-2{
+  letter-spacing: -0.2em;
+}
+
+
+// responsive css utilities
+@media (min-width: 1500px) {
+  .heading-1-upheaval {
+    font-size: 70px;
+  }
+  .heading-3-upheaval {
+    font-size: 46px;
+  }
+  .heading-4 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px){
+  body{
+    font-size: 16px;
+  }
+  .heading-1-upheaval {
+    font-size: 62px;
+  }
+  // .heading-3-upheaval {
+  //   font-size: 40px;
+  // }
+  // .heading-4 {
+  //   font-size: 32px;
+  // }
+  // .heading-4-upheaval {
+  //   font-size: 26px;
+  // }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heading-1 {
+    font-size: 56px;
+  }
+  .heading-2 {
+    font-size: 48px;
+  }
+  .heading-3 {
+    font-size: 36px;
+  }
+  .heading-4 {
+    font-size: 20px;
+  }
+  .heading-5 {
+    font-size: 18px;
+  }
+  .heading-1-upheaval {
+    font-size: 56px;
+  }
+  .heading-3-upheaval {
+    font-size: 36px;
+  }
+  .heading-4-upheaval {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .heading-1 {
+    font-size: 36px;
+  }
+  .heading-2 {
+    font-size: 30px;
+  }
+  .heading-3 {
+    font-size: 24px;
+  }
+  .heading-4 {
+    font-size: 18px;
+  }
+  .heading-5 {
+    font-size: 16px;
+  }
+  .heading-1-upheaval {
+    font-size: 48px;
+  }
+  .heading-3-upheaval {
+    font-size: 32px;
+  }
+  .heading-4-upheaval {
+    font-size: 26px;
+  }
+}

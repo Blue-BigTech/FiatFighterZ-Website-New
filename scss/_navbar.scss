@@ -1,0 +1,108 @@
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &-brand {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #fff;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  &-toggler {
+    border: 1px solid #fff;
+  }
+
+  &-nav {
+    .nav-item {
+      margin-left: 35px;
+      .nav-link {
+        color: #fff;
+        padding-left: 0;
+        padding-right: 0;
+        letter-spacing: -3px;
+        &:hover {
+          color: $primaryTextColor;
+        }
+      }
+    }
+  }
+}
+
+/* hamburger menu start */
+.header-nav #hamburger {
+  cursor: pointer;
+}
+.header-nav #hamburger span {
+  height: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  display: block;
+  -webkit-transition: 0.33s;
+  transition: 0.33s;
+  margin-left: 0;
+}
+.header-nav #hamburger span:nth-child(1) {
+  width: 12px;
+}
+.header-nav #hamburger span:nth-child(2) {
+  width: 24px;
+}
+.header-nav #hamburger span:nth-child(3) {
+  width: 12px;
+}
+.header-nav .display_menu #hamburger span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(2px, 1px);
+  transform: rotate(45deg) translate(2px, 1px);
+}
+.header-nav .display_menu #hamburger span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.header-nav .display_menu #hamburger span:nth-child(3) {
+  -webkit-transform: rotate(45deg) translate(6px, -9px);
+  transform: rotate(45deg) translate(6px, -9px);
+}
+/* hamburger menu end */
+
+// responsive nav
+@media (max-width: 991.98px) {
+  // navbar start here
+  .navbar {
+    .nav-container {
+      position: relative;
+    }
+    #hamburger {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+    .navbar-collapse {
+      padding: 15px;
+      background-color: $darkColor;
+      border: 1px solid $primaryColor;
+      z-index: 4;
+      position: absolute;
+      width: 100%;
+      top: 120px;
+    }
+
+    &-nav {
+      .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  // navbar start here
+}

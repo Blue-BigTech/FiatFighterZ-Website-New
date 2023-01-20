@@ -1,0 +1,28 @@
+.footer{
+    background: #1A0F31;
+    &-nav{
+        display: none;
+        margin-bottom: 32px;
+        .nav-link{
+            font-weight: bold;
+            line-height: 2;
+            letter-spacing: -3px;
+            &:hover{
+                color: $primaryColor !important;
+            }
+        }
+    }
+    .social-nav{
+        margin-bottom: 32px;
+    }
+}
+
+@media (min-width: 1500px){
+    .footer{
+        &-nav{
+            .nav-link{
+                font-size: 20px;
+            }
+        }
+    }
+}

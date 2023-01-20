@@ -1,0 +1,145 @@
+.token-claim {
+  &-content {
+    overflow: hidden;
+    .shape-blue {
+      top: -35%;
+      left: -10%;
+    }
+    .shape-pink {
+      top: -7%;
+      left: 98%;
+      transform: translateX(-50%);
+    }
+    .shape-orange {
+      top: 50%;
+      left: -25%;
+      transform: translateY(-50%);
+    }
+    .shape-purple {
+      top: 40%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+    .shape-light-blue {
+      top: 65%;
+      right: -20%;
+    }
+  }
+  &-hero {
+    width: 100%;
+    max-width: 800px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &-game-changing {
+    .card {
+      min-height: 230px;
+      border: 1px solid $primaryColor;
+      background: rgba(23, 12, 56, 0.5);
+      &-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .heading-6 {
+          line-height: 2;
+        }
+      }
+    }
+  }
+  .about-root {
+    width: 100%;
+    max-width: 810px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &-title {
+      line-height: 2;
+    }
+    .claim-id {
+      padding-left: 15px;
+      padding-right: 15px;
+      .form-group {
+        .form-control {
+          height: 70px;
+          padding: 25px;
+          background: rgba(35, 167, 254, 0.3);
+          color: #fff;
+        }
+        .input-group-text {
+          background: rgba(85, 172, 238, 1);
+          color: #fff;
+          padding-left: 60px;
+          padding-right: 60px;
+        }
+      }
+    }
+    .claim-id-text {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      max-width: 690px;
+    }
+  }
+}
+
+// responsive token claim css
+@media (max-width: 991.98px) {
+  .token-claim {
+    &-game-changing {
+      .card {
+        margin-bottom: 30px;
+      }
+    }
+    .about-root {
+      &-title {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// responsive token claim css
+@media (max-width: 575.98px) {
+  .token-claim {
+    .about-root {
+      &-title {
+        font-size: 16px;
+      }
+      &-buttons {
+        flex-direction: column;
+        .btn {
+          font-size: 0.8rem;
+          margin-bottom: 10px;
+        }
+      }
+      .claim-id {
+        .form-group {
+          .form-control {
+            height: 60px;
+            padding: 15px;
+          }
+          .input-group-text {
+            padding-left: 10px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive token claim css
+// @media (max-width: 375px) {
+//   .token-claim {
+//     .about-root {
+//       //   &-title {
+//       //     font-size: 16px;
+//       //   }
+//       //   &-buttons {
+//       //     flex-direction: column;
+//       //     .btn {
+//       //       font-size: 0.8rem;
+//       //     }
+//       //   }
+//     }
+//   }
+// }

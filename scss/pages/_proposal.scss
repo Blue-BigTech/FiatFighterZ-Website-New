@@ -1,0 +1,204 @@
+.proposal {
+  &-content {
+    overflow: hidden;
+    .shape-blue {
+      top: -35%;
+      left: -10%;
+    }
+    .shape-pink {
+      top: -7%;
+      left: 98%;
+      transform: translateX(-50%);
+    }
+    .shape-orange {
+      top: 50%;
+      left: -20%;
+      transform: translateY(-50%);
+    }
+    .shape-purple {
+      top: 40%;
+      left: 70%;
+      transform: translate(-50%, -50%);
+    }
+    .shape-light-blue {
+      top: 65%;
+      right: -20%;
+    }
+  }
+  &-card {
+    .card-top {
+      padding: 30px;
+      .card-logo {
+        width: 125px;
+        height: 125px;
+        background-color: $primaryColor;
+        border-radius: 50%;
+      }
+    }
+    .card-bottom {
+      border-top: 1px solid $primaryColor;
+      padding: 30px;
+      .list-group {
+        &-item {
+          background-color: transparent;
+          border: none;
+          text-align: left;
+          padding-left: 0;
+          padding-right: 0;
+          color: #fff;
+          transition: all ease 0.3s;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+    background: rgba(23, 12, 56, 0.5);
+    border: 1px solid $primaryColor;
+    color: #fff;
+  }
+  &-dropdown {
+    .btn-theme-primary-outline {
+      background: transparent;
+      border-radius: 25px !important;
+      border: 1px solid #f4a10c;
+      padding: 8px 20px;
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+    .dropdown-menu {
+      //   left: unset !important;
+      //   right: 0 !important;
+      background-color: $darkColor;
+      border: 1px solid $primaryColor;
+      .dropdown-item {
+        color: $primaryColor;
+        font-size: 0.8rem;
+        &:hover {
+          background-color: $primaryColor;
+          color: #fff;
+        }
+      }
+    }
+  }
+  &-list {
+    &-item {
+      background-color: rgba(23, 12, 56, 0.2);
+      border: 1px solid $primaryColor;
+      min-height: 320px;
+      .card-top {
+        min-width: 100%;
+        &-left {
+          .card-top-avatar {
+            min-width: 40px;
+            width: 40px;
+            min-height: 40px;
+            height: 40px;
+            background-color: $primaryColor;
+            border-radius: 50%;
+          }
+        }
+        &-name {
+          font-size: 0.7rem;
+        }
+      }
+      .card-text {
+        min-width: 100%;
+        .sec-text {
+          font-size: 0.8rem;
+        }
+      }
+      .card-bottom {
+        min-width: 100%;
+      }
+    }
+  }
+}
+
+// responsive proposal css
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .proposal {
+    &-card {
+      .card-top {
+        padding-left: 15px;
+        padding-right: 15px;
+        .card-logo {
+          width: 100px;
+          height: 100px;
+        }
+        .card-title {
+          font-size: 18px;
+        }
+        .sec-text {
+          font-size: 12px;
+        }
+        .btn {
+          font-size: 13px;
+        }
+      }
+      .card-bottom {
+        padding-left: 15px;
+        padding-right: 15px;
+        .list-group {
+          &-item {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .proposal {
+    &-card {
+      .card-top {
+        padding-left: 15px;
+        padding-right: 15px;
+        .card-logo {
+          width: 100px;
+          height: 100px;
+        }
+        .card-title {
+          font-size: 18px;
+        }
+        .sec-text {
+          font-size: 12px;
+        }
+        .btn {
+          font-size: 12px;
+        }
+      }
+    }
+    &-list {
+      &-item {
+        background-color: rgba(23, 12, 56, 0.2);
+        border: 1px solid $primaryColor;
+        min-height: 320px;
+        .card-top {
+          .tag {
+            font-size: 0.6rem;
+          }
+          &-left {
+            .card-top-avatar {
+              width: 30px;
+              height: 30px;
+            }
+            .card-top-name {
+              font-size: 0.6rem;
+            }
+          }
+          min-width: 100%;
+          flex-direction: column-reverse;
+          &-right {
+            margin-left: auto;
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// responsive proposal css end

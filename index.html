@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv=Content-Type content=text/html; charset=utf-8 />
+    <title>FiatFighterz</title>
+    <!-- font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
+    <!-- box-icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- bootstrap cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="css/plugins/video-player.css" /> -->
+    <!-- owl carousel link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/assets/owl.carousel.min.css"
+    />
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css'>
+    <link rel='stylesheet' href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css'>
+    
+    <!-- custom css link -->
+    <link rel="stylesheet" href="css/index.css" />
+    
+  </head>
+  <body class="home">
+    <!-- hero section start -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="shape-hero-top"></div>
+        <div class="shape-hero-top-sm"></div>
+        <div class="shape-hero-bottom-right"></div>
+        <div class="shape-hero-bottom-left"></div>
+
+        <!-- nav start -->
+        <nav class="navbar navbar-expand-lg header-nav">
+          <div class="container nav-container">
+            <a class="navbar-brand logo" href="./">
+              <img src="images/logo.png" alt="logo" class="img-fluid" />
+            </a>
+            <div
+              id="hamburger"
+              class="d-lg-none navbar-toggler order-0 order-md-1"
+              data-toggle="collapse"
+              data-target="#top-nav"
+              aria-controls="top-nav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="display_menu()"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <div class="collapse navbar-collapse custom-navbar" id="top-nav">
+              <ul class="navbar-nav ml-auto d-flex align-items-lg-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://fiatfighterzs-organization.gitbook.io/">White Paper</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://discord.gg/PnnDkU4Q">Discord</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#team">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link onclick" href="#launch">Mint</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="btn btn-play-game"
+                    href="coming-soon.html"
+                    >Play Game
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- nav end -->
+        <!-- banner content start -->
+        <div class="banner">
+          <div class="relative banner-image mx-auto mb-2">
+              <img src="images/testing-2.gif" alt="banner image" class="img-fluid w-100"/>
+          </div>
+          <!-- banner image end  -->
+          <h1 class="heading-1 banner-title text-white">
+            <span class="text-theme-primary">FIATFIGHTERZ</span> HAVE ARRIVED
+          </h1>
+          <p class="text-white px-2 banner-text">
+            FiatFighterz is a play to earn, bullet-hell mmo. Fight with friends
+            to defend the world from the invading Fiat King! Together with your
+            companions traverse and conquer the lands that were once left
+            dormant and peaceful, that is until the power of an angry Fiat King
+            scattered dangerous creatures across the beautiful landscapes in an
+            attempt to take complete control!
+          </p>
+          <div class="text-center banner-btn-learn">
+            <a href="" class="btn btn-learn-more"
+              >Learn More</a
+            >
+          </div>
+          <div class="banner-arrow-down">
+            <button type="button" class="btn text-white p-0">
+              <i class="bx bx-chevrons-down"></i>
+            </button>
+          </div>
+        </div>
+        <!-- banner content end -->
+      </div>
+    </section>
+    <!-- hero section end -->
+    <!-- what are section end -->
+    <section class="what-are py-100 bg-theme-dark pos-relative">
+      <div class="shape-blue"></div>
+      <div class="shape-pink"></div>
+      <div class="shape-light-blue"></div>
+      <div class="shape-orange"></div>
+      <div class="shape-pink shape-pink-2"></div>
+      <div class="container">
+        <div class="sec-text text-center font-weight-bold start-hero-text">
+          Start your hero path by selecting a unique class. Defeat enemies to
+          learn and grow your character's strength. Search the world for unique
+          equipment and items to help you along your journey!
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card video-card">
+              <div class="embed__container">
+                <div id="player"></div>
+              </div>
+
+              
+              <div class="carousel__wrap mt-3">
+                <div class="owl-carousel">
+                  <div data-video="pWfYG2AxDU4" class="item video-thumb active">
+                    <img
+                      src="https://img.youtube.com/vi/pWfYG2AxDU4/hqdefault.jpg"
+                    />
+                  </div>
+                  <div data-video="N3QJQLd9IS8" class="item video-thumb">
+                    <img
+                      src="https://img.youtube.com/vi/N3QJQLd9IS8/hqdefault.jpg"
+                    />
+                  </div>
+                  <div data-video="N3QJQLd9IS8" class="item video-thumb">
+                    <img
+                      src=""
+                    />
+                  </div>
+                  <div data-video="N3QJQLd9IS8" class="item video-thumb">
+                    <img
+                      src=""
+                    />
+                  </div>
+                  <div data-video="N3QJQLd9IS8" class="item video-thumb">
+                    <img
+                      src=""
+                    />
+                  </div>
+                  <div data-video="N3QJQLd9IS8" class="item video-thumb">
+                    <img
+                      src=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col end -->
+          <div class="col-lg-6 mt-5 mt-lg-0">
+            <div class="what-are-right pl-lg-5 pl-0">
+              <p class="text-theme-primary what-are-title">
+                In FiatFighterz, you'll find elements such as:
+              </p>
+              <div class="what-are-text">
+                <div
+                  class="d-flex justify-content-start align-items-center what-are-list-item"
+                >
+                  <div class="cus-check mr-3"><i class="fas fa-check"></i></div>
+                  <div>Massively multiplayer online</div>
+                </div>
+                <!-- list item end -->
+                <div
+                  class="d-flex justify-content-start align-items-center what-are-list-item"
+                >
+                  <div class="cus-check mr-3"><i class="fas fa-check"></i></div>
+                  <div>Boss fights and unique dungions</div>
+                </div>
+                <!-- list item end -->
+                <div
+                  class="d-flex justify-content-start align-items-center what-are-list-item"
+                >
+                  <div class="cus-check mr-3"><i class="fas fa-check"></i></div>
+                  <div>Extensive loot and unique items</div>
+                </div>
+                <!-- list item end -->
+                <div
+                  class="d-flex justify-content-start align-items-center what-are-list-item"
+                >
+                  <div class="cus-check mr-3"><i class="fas fa-check"></i></div>
+                  <div>Player to player trading</div>
+                </div>
+                <!-- list item end -->
+                <div
+                  class="d-flex justify-content-start align-items-center what-are-list-item"
+                >
+                  <div class="cus-check mr-3"><i class="fas fa-check"></i></div>
+                  <div>Tough and challenging fights</div>
+                </div>
+                <!-- list item end -->
+              </div>
+            </div>
+          </div>
+          <!-- col endt -->
+
+        </div>
+        <!-- row end -->
+      </div>
+      <!-- launch details start -->
+      <div id="launch" class="launch pos-relative">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="mint-count text-uppercase mx-auto">0 MINTED!</div>
+              <h1 class="sec-title text-uppercase heading-1-upheaval">
+                What are the
+                <span class="text-theme-primary">launch</span> details?
+              </h1>
+              <p class="sec-text">
+                1 FiatFighter cost 500 XRD.<br><br>Please send your XRD to the wallet and FiatFighter token(s) will be sent back to you.
+                These fungible tokens represent your right to mint a random FiatFighter(z) after Babylon.
+                <br><br>Wallet:rdx1qspx0h2cg9zhyxxwlv7mza29r<br>q8jha2uvc5ff0zj4amc8hj79z0735g4dj087
+                
+              </p>
+              
+            </div>
+            <!-- col end -->
+            <div class="col-lg-6 text-center text-lg-left pl-0 pl-lg-5">
+              <img src="images/showcase.png" alt="what are" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- launch details end -->
+      <!-- collection start -->
+      <div id="collection" class="collection">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5">
+                <div class="collection-left">
+                  <img src="images/gif.gif" alt="collection gif" class="img-fluid w-100">
+                </div>
+              </div>
+              <!-- col end  -->
+              <div class="col-lg-7 mt-5 mt-lg-0">
+                <div class="collection-right">
+                  <div class="collection-item">
+                    <h2 class="title heading-3-upheaval text-theme-primary">
+                      GENESIS COLLECTION
+                    </h2>
+                    <p class="sec-text mb-0">
+                      The Genesis FiatFighterz NFT collection consists of 3,333 entirely unique characters which makes all FiatFighterz equally rare. Each Genesis FiatFighter is an irrevocable member of FiatFighterz DAO and entitled to one vote in all governance matters. Genesis FiatFighterz can be revived ingame. 
+                      </p>
+                  </div>
+                  <!-- item end  -->
+                  <div class="collection-item">
+                    <h2 class="title heading-3-upheaval text-theme-primary">
+                      ACADEMY COLLECTION
+                    </h2>
+                    <p class="sec-text mb-0">
+                      The Academy collection is created with the sole purpose of being a ticket to the FiatFighter'z universe. Academy collection NFTs do not serve as governance votes and be careful… death is permanent
+                    </p>
+                  </div>
+                  <!-- item end  -->
+                  
+                    <h2 class="title heading-4-upheaval">
+                      <a href="#" class="text-theme-primary"></a>
+                    </h2>
+                  </div>
+                  <!-- item end  -->
+                </div>
+            </div>
+            <!-- col end  -->
+          </div>
+          <div class="gap"></div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="sec-title heading-1-upheaval text-uppercase text-center text-theme-primary">
+                    Ultra Rare Fiatfighterz
+                </h1>
+              </div>
+              <div class="gap"></div>
+                <div class="col-md-12">
+                  <div class="slick-carousel">
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia00893.png" alt="fro" />
+                        </div>
+                      </div>
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia01063.png" alt="fro" />
+                        </div>
+                      </div>
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia01083.png" alt="fro" />
+                        </div>
+                      </div>
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia01113.png" alt="fro" />
+                        </div>
+                      </div>
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia01063.png" alt="fro" />
+                        </div>
+                      </div>
+                      <div class="slide-item">
+                        <div class="img-item">
+                          <img src="./images/sprite_1_1_copia01083.png" alt="fro" />
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+      </div>
+      <!-- collection end -->
+    </section>
+    <!-- what are section end -->
+    <!-- what is section start -->
+    <section class="what-is bg-theme-secondary pos-relative">
+      <div class="container">
+        <h1 class="sec-title heading-1-upheaval text-uppercase text-center">
+          WHAT IS $fiat?
+        </h1>
+        <div class="what-is-text">
+          <div
+            class="d-flex justify-content-start what-is-list-item"
+          >
+            <div class="cus-check"><i class="fas fa-check"></i></div>
+            <div>
+              Player will be givien the choice to destory high valued and rare items in exchange for $FIAT the game's native currency. To obtain $FIAT tokens bring your acquired items to an in-game merchant who will price each item based on its scarcity within the game.
+
+
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item"
+          >
+            <div class="cus-check"><i class="fas fa-check"></i></div>
+            <div>
+              $FIAT is the primary means to get your hands on in-game resourcees, accessories, gear, and other consumables. 
+
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item"
+          >
+            <div class="cus-check"><i class="fas fa-check"></i></div>
+            <div>
+              The $FIAT token will be hosted on the Radix Network. This will allow us to distribute token without high gas fees and handle thousands of transactions.
+
+               </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item"
+          >
+            <div class="cus-check"><i class="fas fa-check"></i></div>
+            <div>
+              $FIAT can also be used to buy Academy NFTs, name FiatFighterz, write loreand other special features
+
+            </div>
+          </div>
+          <!-- list item end -->
+        </div>
+        <div class="d-flex justify-content-center what-is-btns">
+          <a href="https://ociswap.com/" class="btn btn-what-is">Chart</a>
+          <a href="" class="btn btn-what-is">Contact</a>
+        </div>
+      </div>
+    </section>
+    <!-- what is section end -->
+    <!-- road map section end -->
+    <section class="roadmap bg-theme-dark pos-relative text-white">
+      <div class="shape-blue"></div>
+      <div class="shape-pink"></div>
+      <div class="shape-light-blue"></div>
+      <div class="shape-orange"></div>
+
+      <div class="container">
+        <h1 class="sec-title heading-1-upheaval text-uppercase text-center text-theme-primary">
+          Roadmap
+        </h1>
+        <div class="roadmap-text">
+          <h2 class="heading-4 font-weight-bold lt-minus-2 roadmap-list-title">Before mint</h2>
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+             All FiatFighter Unique art Sprites designed.
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+            The Beta Version of the game is complete and ready for release after Radix mainnet is Live.
+
+            </div>
+          </div>
+          <!-- list item end -->
+        </div>
+        <!-- item end -->
+        <div class="roadmap-text">
+          <h2 class="heading-4 font-weight-bold lt-minus-2 roadmap-list-title">After mint</h2>
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+             Fiat Fighterz the game released to Genesis nft holders 
+
+
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+            Launch of the $FIAT token
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check mr-3"><i class="fas fa-chec"></i></div>
+            <div>
+      Launch of Acedemy Collection- 2nd generation FiatFighterz NFTs
+
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+          Voting Dapp released
+            </div>
+          </div>
+          <!-- list item end -->
+          <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+             Updated roadmap released
+
+            </div>
+          </div>
+           <div
+            class="d-flex justify-content-start what-is-list-item pl-4"
+          >
+            <div class="cus-check"><i class="fas fa-chec"></i></div>
+            <div>
+            Future roadmap features beyond this point will be decided by the FiatFighterz DAO
+            </div>
+          </div>
+          <!-- list item end -->
+        </div>
+        
+      </div>
+    </section>
+    <!-- road map section end -->
+    <!-- faq section start -->
+    <section class="faq bg-theme-primary-dark pos-relative">
+      <div class="container">
+        <h1 class="sec-title heading-1-upheaval text-uppercase text-white text-center">
+          faqs
+        </h1>
+        <div class="faq-text mt-5">
+          <div class="faq-item">
+            <div
+              class="faq-item-question d-flex justify-content-start faq-list-item"
+            >
+              <div class="cus-question">
+                <i class="fas fa-question"></i>
+              </div>
+              <div>
+            What Blockchain will the NFTs be Minted on?
+
+
+
+
+              </div>
+            </div>
+            <!-- list item question end -->
+            <div
+              class="faq-item-ans d-flex justify-content-start faq-list-item text-white"
+            >
+              <div class="cus-check"><i class="fas fa-check"></i></div>
+              <div>
+                We believe that Radix DLT will soon take over the crypto and web3 spaces. It is the only L1 solution that is technically capable to provide unlimited scalability without breaking the atomic composability. Supporting Radix is a long-term goal so we are here to stay and to contribute to the growth of the network. (Go check radixdlt.com for more details)
+              </div>
+            </div>
+            <!-- list item ans end -->
+          </div>
+          <!-- faq item -->
+          <div class="faq-item">
+            <div
+              class=" faq-item-question d-flex justify-content-start faq-list-item"
+            >
+              <div class="cus-question">
+                <i class="fas fa-question"></i>
+              </div>
+              <div>
+When does minting start?
+
+              </div>
+            </div>
+            <!-- list item question end -->
+            <div
+              class="faq-item-ans d-flex justify-content-start faq-list-item text-white"
+            >
+              <div class="cus-check"><i class="fas fa-check"></i></div>
+              <div>
+                Starting 26 January 2023 you can reserve FiatFighterz by sending XRD (Radix tokens) to the wallet show above.
+
+              </div>
+            </div>
+            <!-- list item ans end -->
+          </div>
+          <!-- faq item -->
+          <div class="faq-item">
+            <div
+              class=" faq-item-question d-flex justify-content-start faq-list-item"
+            >
+              <div class="cus-question">
+                <i class="fas fa-question"></i>
+              </div>
+              <div>
+                When is the game being released
+
+              </div>
+            </div>
+            <!-- list item question end -->
+            <div
+              class="faq-item-ans d-flex justify-content-start faq-list-item text-white"
+            >
+              <div class="cus-check"><i class="fas fa-check"></i></div>
+              <div>
+             Fiat Fighterz the game has been in development for over 2 years and is ready to be released to genesis nft holders after Babylon Mainnet goes LIVE!
+              </div>
+            </div>
+            <!-- list item ans end -->
+          </div>
+          <!-- faq item -->
+          <div class="faq-item">
+            <div
+              class=" faq-item-question d-flex justify-content-start faq-list-item"
+            >
+              <div class="cus-question">
+                <i class="fas fa-question"></i>
+              </div>
+              <div>
+              How many can I reserve at one time?
+
+              </div>
+            </div>
+            <!-- list item question end -->
+            <div
+              class="faq-item-ans d-flex justify-content-start faq-list-item text-white"
+            >
+              <div class="cus-check"><i class="fas fa-check"></i></div>
+              <div>
+                You will be able to reserve up to 100 FiatFighterz per transaction.
+              </div>
+            </div>
+            <!-- list item ans end -->
+          </div>
+          <!-- faq item -->
+        </div>
+      </div>
+    </section>
+    <!-- faq section end -->
+    <!-- team section start -->
+    <section  class="team bg-theme-dark pos-relative">
+      <div class="shape-blue"></div>
+      <div class="shape-pink"></div>
+      <div class="shape-light-blue"></div>
+      <div class="shape-orange"></div>
+      <div class="container">
+        <h1 class="sec-title heading-1-upheaval text-uppercase text-white text-center">
+          Meet our team
+        </h1>
+        <div id="team" class="row">
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member text-center">
+              <img src="./images/team/24.png" alt="" class="img-fluid team-member-img">
+              <div class="team-member-name mt-3 mb-2 text-white">Cluse</div>
+              <div class="team-member-designation text-white">Creator
+                 <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- team end -->
+          </div>
+
+          
+          <!-- col end -->
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member text-center">
+              <img src="./images/team/13.png" alt="" class="img-fluid team-member-img">
+              <div class="team-member-name mt-3 mb-2 text-white">Jingesky</div>
+              <div class="team-member-designation text-white">Lead Devrloper 
+                 <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- team end -->
+          </div>
+          <!-- col end -->
+          <!-- col end -->
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member text-center">
+              <img src="./images/team/17.png" alt="" class="img-fluid team-member-img">
+              <div class="team-member-name mt-3 mb-2 text-white">Shagar </div>
+              <div class="team-member-designation text-white">Frontend Developer 
+                 <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- team end -->
+          </div>
+          <!-- col end -->
+          <!-- col end -->
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member text-center">
+              <img src="./images/team/74.png" alt="" class="img-fluid team-member-img">
+              <div class="team-member-name mt-3 mb-2 text-white">TomDraws </div>
+              <div class="team-member-designation text-white"> Designer 
+                 <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- team end -->
+          </div>
+          <!-- col end -->
+          <!-- col end -->
+          <div class="col-sm-6 col-md-3">
+            <div class="team-member text-center">
+              <img src="./images/team/38.png" alt="" class="img-fluid team-member-img">
+              <div class="team-member-name mt-3 mb-2 text-white">Bee </div>
+              <div class="team-member-designation text-white"> Designer 
+                 <a href="#" class="team-social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <!-- team end -->
+          </div>
+          <!-- col end -->
+          
+          <!-- col end -->
+        
+          <!-- col end -->
+         
+          <!-- col end -->
+        </div>
+      </div>
+    </section>
+    <!-- team section end -->
+    <!-- footer start -->
+    <footer class="footer pt-4 pb-5 text-white text-center">
+      <div class="container">
+        <div class="logo mx-auto pt-3">
+          <img src="images/logo.png" alt="logo" class="img-fluid">
+        </div>
+        <ul class="nav footer-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Lore</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">NFT Contract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Token Contract</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#"></a>
+          </li>
+        </ul>
+        <!-- footer nav end -->
+        <ul class="nav social-nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab fa-discord"></i>
+              <span class="ml-2">Discord</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fab fa-twitter"></i>
+              <span class="ml-2">Twitter</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class=""></i>
+              <span class="ml-2"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- footer social nav  -->
+        <p class="text-capitalize pt-1">All rights Reserved 2022</p>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script> -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- owl carousel js -->
+    <script src="https://cdn.jsdelivr.net/npm/owl.carousel2@2.2.2/dist/owl.carousel.min.js"></script>
+    <script src='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js'></script>
+    <script src="js/plugins/video-player.js"></script>
+    <script>
+      // custom hamburger toggle
+      function display_menu() {
+        var nav_container = document.querySelector(".nav-container");
+        !nav_container.classList.contains("display_menu")
+          ? nav_container.classList.add("display_menu")
+          : nav_container.classList.remove("display_menu");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,120 @@
+.shape-hero-top {
+  position: absolute;
+  width: 913px;
+  height: 913px;
+  background: linear-gradient(180deg, rgba(0, 255, 209, 0) 7.81%, #0077ff 100%);
+  opacity: 0.6;
+  top: -80%;
+  left: -10%;
+  filter: blur(300px);
+  transform: rotate(47.59deg);
+}
+.shape-hero-top-sm {
+  position: absolute;
+  width: 438px;
+  height: 593px;
+  background: linear-gradient(
+    180deg,
+    rgba(71, 151, 238, 0.28) 0%,
+    #ff29c3 100%
+  );
+  opacity: 0.8;
+  top: -50%;
+  left: 50%;
+  filter: blur(400px);
+  transform: rotate(62.96deg);
+}
+.shape-hero-bottom-right {
+  position: absolute;
+  width: 571px;
+  height: 571px;
+  right: -250px;
+  bottom: -250px;
+  background: linear-gradient(
+    145.89deg,
+    rgba(255, 0, 168, 0) -38.41%,
+    #2723fe 88.8%,
+    #23a7fe 88.81%
+  );
+  filter: blur(150px);
+  border-radius: 1000px;
+}
+.shape-hero-bottom-left {
+  position: absolute;
+  width: 744px;
+  height: 744px;
+  left: -400px;
+  bottom: -400px;
+
+  background: linear-gradient(
+    143.15deg,
+    #ffd600 8.37%,
+    rgba(255, 0, 77, 0.2) 91.49%
+  );
+  opacity: 0.4;
+  filter: blur(100px);
+  transform: rotate(65.68deg);
+}
+
+// what are shapes
+.shape-blue {
+  position: absolute;
+  width: 913px;
+  height: 913px;
+  background: linear-gradient(180deg, rgba(0, 255, 209, 0) 7.81%, #0077ff 100%);
+  opacity: 0.6;
+  filter: blur(300px);
+  transform: rotate(47.59deg);
+}
+
+.shape-pink {
+  position: absolute;
+  width: 438px;
+  height: 593px;
+  background: linear-gradient(
+    180deg,
+    rgba(71, 151, 238, 0.28) 0%,
+    #ff29c3 100%
+  );
+  opacity: 0.8;
+  filter: blur(250px);
+  transform: rotate(62.96deg);
+}
+
+.shape-light-blue {
+  position: absolute;
+  width: 571px;
+  height: 571px;
+  background: linear-gradient(
+    145.89deg,
+    rgba(255, 0, 168, 0) -38.41%,
+    #2723fe 88.8%,
+    #23a7fe 88.81%
+  );
+  filter: blur(200px);
+  border-radius: 1000px;
+}
+
+.shape-purple {
+  position: absolute;
+  width: 417px;
+  height: 417px;
+
+  background: #7500af;
+  opacity: 0.3;
+  filter: blur(300px);
+}
+
+.shape-orange {
+  position: absolute;
+  width: 744px;
+  height: 744px;
+  background: linear-gradient(
+    143.15deg,
+    #ffd600 8.37%,
+    rgba(255, 0, 77, 0.2) 91.49%
+  );
+  opacity: 0.4;
+  filter: blur(300px);
+  transform: rotate(65.68deg);
+}
